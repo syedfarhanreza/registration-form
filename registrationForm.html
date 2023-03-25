@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="form-title">Registration</h1>
-      <form action="#">
+      <h1 class="form-title">Alumni Registration</h1>
+      <form action="connect.php" method="post">
         <div class="main-user-info">
           <div class="user-input-box">
             <label for="fullName">Full Name</label>
@@ -41,28 +41,42 @@
                     placeholder="Enter Phone Number"/>
           </div>
           <div class="user-input-box">
-            <label for="password">Password</label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Enter Password"/>
+            <label for="Sid">Student ID</label>
+            <input type="text"
+                    id="Sid"
+                    name="Sid"
+                    placeholder="Enter Student ID"/>
           </div>
           <div class="user-input-box">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm Password"/>
+            <label for="batch">Batch</label>
+            <input type="text"
+                    id="batch"
+                    name="batch"
+                    placeholder="Batch"/>
+          </div>
+          <div class="user-input-box">
+            <label for="session">Session</label>
+            <input type="text"
+                    id="session"
+                    name="session"
+                    placeholder="Session"/>
+          </div>
+          <div class="user-input-box">
+            <label for="department">Department</label>
+            <input type="text"
+                    id="department"
+                    name="department"
+                    placeholder="Department"/>
           </div>
         </div>
         <div class="gender-details-box">
           <span class="gender-title">Gender</span>
           <div class="gender-category">
-            <input type="radio" name="gender" id="male">
+            <input type="radio" name="gender" value="male" id="male">
             <label for="male">Male</label>
-            <input type="radio" name="gender" id="female">
+            <input type="radio" name="gender" value="female" id="female">
             <label for="female">Female</label>
-            <input type="radio" name="gender" id="other">
+            <input type="radio" name="gender" value="other" id="other">
             <label for="other">Other</label>
           </div>
         </div>
